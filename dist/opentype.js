@@ -4202,6 +4202,8 @@
 	        var topDict = parseCFFTopDict(topDictData, strings);
 	        topDict._subrs = [];
 	        topDict._subrsBias = 0;
+	        topDict._defaultWidthX = 0;
+	        topDict._nominalWidthX = 0;
 	        var privateSize = topDict.private[0];
 	        var privateOffset = topDict.private[1];
 	        if (privateSize !== 0 && privateOffset !== 0) {
